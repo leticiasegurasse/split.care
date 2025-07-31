@@ -1,6 +1,7 @@
 // Layout padrão para as páginas
 import type { ReactNode } from 'react';
 import Sidebar from '../components/Sidebar';
+import Footer from '../components/Footer';
 
 type Props = {
   children: ReactNode;
@@ -13,6 +14,7 @@ const DefaultLayout = ({ children }: Props) => {
       <main className="w-full mt-16 md:mt-20 mx-auto p-6 lg:p-0">
         {children}
       </main>
+      <Footer />
     </div>
   );
 };

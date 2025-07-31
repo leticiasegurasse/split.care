@@ -16,6 +16,8 @@ import logoLgpd from '../assets/images/logos/lgpd.avif';
 import logoMeta from '../assets/images/logos/meta.avif';
 import logoOpenai from '../assets/images/logos/openai.avif';
 import logoHc from '../assets/images/logos/hc.avif';
+import lampadaCerebroImg from '../assets/images/lampada-cerebro.avif';
+import { Rocket, Shield, Users, ArrowRight } from 'lucide-react';
 
 const Home = () => {
   return (
@@ -329,6 +331,565 @@ const Home = () => {
   </div>
 </section>
 
+      {/* Sexta Seção - Call to Action */}
+      <section className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 bg-white">
+        <div className="max-w-4xl mx-auto text-center">
+          {/* Título principal */}
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Sua consulta muda. Sua rotina muda.
+          </h2>
+          
+          {/* Subtítulo */}
+          <h3 className="text-4xl sm:text-5xl md:text-6xl font-black text-gray-900 mb-12">
+            Sua vida agradece.
+          </h3>
+
+          {/* Formulário de contato */}
+          <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+            <input
+              type="email"
+              placeholder="Digite aqui seu email..."
+              className="flex-1 px-4 py-3 rounded-lg bg-[var(--color-secondary-100)] text-gray-900 placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-[var(--color-secondary)] focus:ring-opacity-50"
+            />
+            <button className="px-6 py-3 bg-[var(--color-secondary)] text-white font-semibold rounded-lg hover:bg-[var(--color-secondary-600)] transition-colors duration-200 whitespace-nowrap">
+              Fale Conosco
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Sétima Seção - Problemas e Soluções */}
+      <section className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 bg-white">
+        <div className="max-w-4xl mx-auto">
+          {/* Título principal */}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900">
+              Está vivendo isso?
+            </h2>
+          </div>
+
+          {/* Caixa azul com problemas */}
+          <div className="bg-[var(--color-primary)] rounded-2xl p-8 mb-12">
+            <div className="space-y-6">
+              {/* Problema 1 */}
+              <details className="group">
+                <summary className="flex items-center text-white text-lg font-semibold cursor-pointer list-none">
+                  <span className="mr-3 text-2xl">+</span>
+                  A medicina te deu uma carreira... mas tem roubado sua presença.
+                </summary>
+                <div className="mt-4 text-white/90 space-y-2">
+                  <p>Você sai do consultório... mas o consultório não sai de você.</p>
+                  <p>Chega em casa e ainda está trabalhando.</p>
+                  <p>Com um laptop aberto e um olhar fechado.</p>
+                  <p>Sua família janta sozinha.</p>
+                  <p>Você digita sozinho.</p>
+                  <p>O problema não é falta de tempo.</p>
+                  <p>É excesso de burocracia.</p>
+                </div>
+              </details>
+
+              <hr className="border-white/20" />
+
+              {/* Problema 2 */}
+              <details className="group">
+                <summary className="flex items-center text-white text-lg font-semibold cursor-pointer list-none">
+                  <span className="mr-3 text-2xl">+</span>
+                  O cansaço que você leva pra casa não é da medicina. É da burocracia.
+                </summary>
+                <div className="mt-4 text-white/90 space-y-2">
+                  <p>O dia termina, mas sua jornada não.</p>
+                  <p>Paciente sai do consultório... e você entra no prontuário.</p>
+                  <p>Horas extras que ninguém vê.</p>
+                  <p>Tempo roubado da sua família, da sua saúde, de você.</p>
+                </div>
+              </details>
+
+              <hr className="border-white/20" />
+
+              {/* Problema 3 */}
+              <details className="group">
+                <summary className="flex items-center text-white text-lg font-semibold cursor-pointer list-none">
+                  <span className="mr-3 text-2xl">+</span>
+                  Você está olhando mais pra tela do que pro paciente.
+                </summary>
+                <div className="mt-4 text-white/90 space-y-2">
+                  <p>Você já teve essa sensação... Ele já teve essa sensação.</p>
+                  <p>Porque ela é real.</p>
+                  <p>Você virou escrivão da própria consulta.</p>
+                  <p>O prontuário virou o protagonista.</p>
+                  <p>E o paciente, coadjuvante.</p>
+                </div>
+              </details>
+            </div>
+          </div>
+
+          {/* Solução */}
+          <div className="text-center mb-12">
+            <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Existe um novo jeito.
+            </h3>
+            <h4 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900">
+              E ele muda tudo.
+            </h4>
+          </div>
+
+          {/* Explicação da solução */}
+          <div className="text-center mb-12">
+            <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
+              Você não precisa mais escolher entre cuidar e documentar.<br />
+              Agora, dá pra fazer os dois. Ao mesmo tempo.
+            </p>
+          </div>
+
+          {/* Call to Action */}
+          <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+            <input
+              type="email"
+              placeholder="Digite aqui seu email..."
+              className="flex-1 px-4 py-3 rounded-lg bg-[var(--color-secondary-100)] text-gray-900 placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-[var(--color-secondary)] focus:ring-opacity-50"
+            />
+            <button className="px-6 py-3 bg-[var(--color-secondary)] text-white font-semibold rounded-lg hover:bg-[var(--color-secondary-600)] transition-colors duration-200 whitespace-nowrap">
+              Fale Conosco
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Oitava Seção - Perguntas e Respostas */}
+      <section className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 bg-white">
+        <div className="max-w-4xl mx-auto">
+          {/* Título principal */}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Com o Splitcare, você conversa.
+            </h2>
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+              A IA escuta.
+            </h3>
+            <h4 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+              E, em segundos, está pronto.
+            </h4>
+            <p className="text-xl text-gray-600">
+              Evolução estruturada, clara, com linguagem clínica.
+            </p>
+          </div>
+
+          {/* Caixa azul com perguntas e respostas */}
+          <div className="bg-[var(--color-primary)] rounded-2xl p-8">
+            <div className="space-y-6">
+              {/* Pergunta 1 */}
+              <details className="group">
+                <summary className="flex items-center text-white text-lg font-semibold cursor-pointer list-none">
+                  <span className="mr-3 text-2xl">×</span>
+                  É só mais uma ferramenta?
+                </summary>
+                <div className="mt-4 text-white/90 space-y-2">
+                  <p>Não é. É o fim do trabalho invisível. É a sua volta pra casa mais cedo. É você retomando o controle do seu tempo e da sua presença.</p>
+                </div>
+              </details>
+
+              <hr className="border-white/20" />
+
+              {/* Pergunta 2 */}
+              <details className="group">
+                <summary className="flex items-center text-white text-lg font-semibold cursor-pointer list-none">
+                  <span className="mr-3 text-2xl">×</span>
+                  Mas será que não é mais um app que promete e não entrega?
+                </summary>
+                <div className="mt-4 text-white/90 space-y-2">
+                  <p>Prometer é fácil. Mostrar, melhor. Experimente. Em segundos, você vai entender. Splitcare é o reencontro com o que te fez escolher a medicina: O olhar no paciente. A escuta de verdade.</p>
+                </div>
+              </details>
+
+              <hr className="border-white/20" />
+
+              {/* Pergunta 3 */}
+              <details className="group">
+                <summary className="flex items-center text-white text-lg font-semibold cursor-pointer list-none">
+                  <span className="mr-3 text-2xl">×</span>
+                  Mas no fim eu não vou ter que copiar e colar no prontuário?
+                </summary>
+                <div className="mt-4 text-white/90 space-y-2">
+                  <p>Vai. Mas é só isso. Sem escrever do zero. Sem formatar. Sem perder tempo. Você clica, copia, cola... e pronto. O que antes levava minutos (ou horas), agora leva segundos. Você fala. A IA estrutura. Você revisa. E segue. Simples. E leve.</p>
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Nona Seção - Segurança e Privacidade */}
+      <section className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          {/* Título principal */}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              Mito da Insegurança: como nossa IA protege você e seus pacientes
+            </h2>
+            <p className="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed">
+              Muitos médicos ainda acreditam que ao usar uma IA para transcrição de consultas, seus dados e os de seus pacientes podem ser usados para treinar modelos, comprometendo a privacidade. Isso não poderia estar mais longe da verdade!
+            </p>
+          </div>
+
+          {/* Cards de segurança */}
+          <div className="grid md:grid-cols-3 gap-8">
+            
+            {/* Card 1 - OPT-OUT */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Rocket className="w-8 h-8 text-gray-600" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  OPT-OUT: Seus dados, sua decisão.
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Se você assim decidir, nossa IA não usa seus dados para "aprender". Ela processa a consulta e o seu diálogo em tempo real e entrega os dados dos seus pacientes exclusivamente para você.
+                </p>
+              </div>
+            </div>
+
+            {/* Card 2 - Privacidade Garantida */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Shield className="w-8 h-8 text-gray-600" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  Privacidade Garantida
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Seguimos rigorosos padrões de compliance, como LGPD e HIPAA, Criptografia e Anonimização garantindo que cada consulta seja protegida com tecnologia de ponta.
+                </p>
+              </div>
+            </div>
+
+            {/* Card 3 - Ainda não está convencido? */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Users className="w-8 h-8 text-gray-600" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  Ainda não está convencido?
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Precisa dos dados? Eles ficam seguros. Quer excluir? O Splitcare pode fazer isso para você automaticamente. A cada 24h.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Décima Seção - Estatísticas e Call-to-Action */}
+      <section className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 bg-white">
+        <div className="max-w-6xl mx-auto">
+          
+          {/* Seção de Estatísticas */}
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
+            
+            {/* Estatística 1 */}
+            <div className="text-center">
+              <div className="text-5xl sm:text-6xl font-bold text-gray-400 mb-2">
+                +700
+              </div>
+              <div className="text-lg text-gray-900">
+                Médicos Ativos
+              </div>
+            </div>
+
+            {/* Estatística 2 */}
+            <div className="text-center">
+              <div className="text-5xl sm:text-6xl font-bold text-gray-400 mb-2">
+                +250.000
+              </div>
+              <div className="text-lg text-gray-900">
+                Evoluções Médicas Auditáveis
+              </div>
+            </div>
+
+            {/* Estatística 3 */}
+            <div className="text-center">
+              <div className="text-5xl sm:text-6xl font-bold text-gray-400 mb-2">
+                &lt;10s
+              </div>
+              <div className="text-lg text-gray-900">
+                Geração de Evolução
+              </div>
+            </div>
+          </div>
+
+          {/* Call-to-Action */}
+          <div className="text-center">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-8">
+              Liberte seu tempo agora!
+            </h2>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
+              <input
+                type="email"
+                placeholder="nome@email.com"
+                className="flex-1 px-6 py-4 bg-orange-100 border border-orange-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-300 focus:border-transparent"
+              />
+              <button className="px-8 py-4 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition-colors duration-300 whitespace-nowrap">
+                Teste Grátis
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Décima Primeira Seção - Missão desde 2021 */}
+      <section className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <div className="flex flex-col md:flex-row items-start gap-8">
+            
+            {/* Ícone de Lâmpada */}
+            <div className="flex-shrink-0">
+                <img 
+                  src={lampadaCerebroImg} 
+                  alt="Lâmpada Cerebro" 
+                  className="w-28 h-28 object-contain"
+                />
+            </div>
+
+            {/* Texto da Missão */}
+            <div className="flex-1 text-center">
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight">
+                Desde 2021, estamos redefinindo como
+                <br />
+                médicos registram, atendem, protegem e
+                <br />
+                evoluem sua prática Médica.
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Décima Segunda Seção - Planos de Preços */}
+      <section className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 bg-blue-50">
+        <div className="max-w-7xl mx-auto">
+          
+          {/* Label e Título */}
+          <div className="text-center mb-12">
+            <div className="inline-block bg-[var(--color-accent)] text-gray-900 px-4 py-2 rounded-full text-sm font-medium mb-4">
+              Asistente de IA
+            </div>
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900">
+              Liberte seu tempo agora!
+            </h2>
+          </div>
+
+          {/* Cards de Planos */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto">
+            
+            {/* Card Azul - Prontuário + Split-assist */}
+            <div className="bg-[var(--color-primary)] rounded-2xl p-6 md:p-8 shadow-lg">
+              <h3 className="text-2xl font-bold text-white mb-4">
+                Prontuário + Split-assist
+              </h3>
+              
+              <hr className="border-white/30 mb-6" />
+              
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-center text-white">
+                  <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
+                  Split-assist (IA)
+                </li>
+                <li className="flex items-center text-white">
+                  <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
+                  Prontuário
+                </li>
+                <li className="flex items-center text-white">
+                  <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
+                  Agenda
+                </li>
+                <li className="flex items-center text-white">
+                  <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
+                  Financeiro
+                </li>
+                <li className="flex items-center text-white">
+                  <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
+                  Telemedicina
+                </li>
+              </ul>
+
+              <div>
+                <div className="text-3xl font-bold text-white mb-4">
+                  Consulte
+                </div>
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <input
+                    type="email"
+                    placeholder="Digite aqui seu email..."
+                    className="flex-1 px-4 py-3 bg-amber-100 border border-amber-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-300"
+                  />
+                  <button className="px-6 py-3 bg-amber-500 text-white font-semibold rounded-lg hover:bg-amber-600 transition-colors whitespace-nowrap">
+                    Fale Conosco
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Card Branco - Split-assist */}
+            <div className="bg-white rounded-2xl p-6 md:p-8 shadow-lg">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                Split-assist
+              </h3>
+              
+              <hr className="border-gray-300 mb-6" />
+              
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-center text-gray-900">
+                  <span className="w-2 h-2 bg-gray-900 rounded-full mr-3"></span>
+                  Trancrição Ilimitada
+                </li>
+                <li className="flex items-center text-gray-900">
+                  <span className="w-2 h-2 bg-gray-900 rounded-full mr-3"></span>
+                  Compartilhamento ilimitado de caso clínico
+                </li>
+                <li className="flex items-center text-gray-900">
+                  <span className="w-2 h-2 bg-gray-900 rounded-full mr-3"></span>
+                  Modelo de Anamnese com Respaldo Jurídico
+                </li>
+                <li className="flex items-center text-gray-900">
+                  <span className="w-2 h-2 bg-gray-900 rounded-full mr-3"></span>
+                  7 dias grátis
+                </li>
+                <li className="flex items-center text-gray-900">
+                  <span className="w-2 h-2 bg-gray-900 rounded-full mr-3"></span>
+                  Sem compromisso
+                </li>
+              </ul>
+
+              <div>
+                <div className="flex items-baseline mb-6">
+                  <span className="text-4xl font-bold text-gray-900">R$249,90</span>
+                  <span className="text-gray-500 ml-2">/mês</span>
+                </div>
+                <button className="w-full px-6 py-4 bg-[var(--color-primary)] text-white font-semibold rounded-lg hover:bg-[var(--color-primary-600)] transition-colors">
+                  Use Splitcare
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Décima Terceira Seção - FAQ */}
+      <section className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          
+          {/* Header */}
+          <div className="text-center mb-12">
+            <div className="inline-block bg-gray-900 text-white px-4 py-2 rounded-full text-sm font-medium mb-4">
+              FAQ
+            </div>
+            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900">
+              PERGUNTAS FREQUENTES
+            </h2>
+          </div>
+
+          {/* Container FAQ */}
+          <div className="bg-white border border-blue-200 rounded-2xl p-8 mb-8">
+            <div className="space-y-6">
+              
+              {/* Pergunta 1 - Expandida */}
+              <details className="group" open>
+                <summary className="flex items-center justify-between text-gray-900 text-lg font-semibold cursor-pointer list-none">
+                  Como o Split-assist funciona?
+                  <span className="text-2xl group-open:hidden">+</span>
+                  <span className="text-2xl hidden group-open:block">×</span>
+                </summary>
+                <div className="mt-4 text-gray-700 space-y-4">
+                  <p>O Splitcare é um assistente de inteligência artificial projetado para otimizar a rotina médica, permitindo que os profissionais foquem no que realmente importa: o cuidado com o paciente.</p>
+                  <p>Ele ouve, processa e transcreve a consulta em tempo real, estruturando automaticamente anamneses, prontuários e outros documentos clínicos, reduzindo o tempo gasto com burocracia e aprimorando a precisão dos registros médicos.</p>
+                  <p>Prezamos pela agilidade e este processo demora, em média, apenas 10 segundos.</p>
+                </div>
+              </details>
+
+              <hr className="border-gray-200" />
+
+              {/* Pergunta 2 */}
+              <details className="group">
+                <summary className="flex items-center justify-between text-gray-900 text-lg font-semibold cursor-pointer list-none">
+                  O Splitcare pode ser usado em consultas de telemedicina?
+                  <span className="text-2xl group-open:hidden">+</span>
+                  <span className="text-2xl hidden group-open:block">×</span>
+                </summary>
+                <div className="mt-4 text-gray-700 space-y-4">
+                  <p>Sim! O Splitcare pode ser utilizado em consultas por telemedicina de forma simples e eficiente.</p>
+                  <p><strong>Como usar na telemedicina?</strong></p>
+                  <ol className="list-decimal list-inside space-y-2 ml-4">
+                    <li>Abra sua plataforma de telemedicina ou videochamada no navegador.</li>
+                    <li>Acesse o Splitcare, clique em "Telemedicina" e selecione a aba da videochamada para iniciar a gravação de áudio.</li>
+                    <li>Você verá dois mostradores de microfone: um para sua voz e outro para a do paciente.</li>
+                    <li>Conduza a consulta normalmente e verbalize todas as informações importantes.</li>
+                    <li>Finalize o atendimento, e o Splitcare gerará um resumo clínico estruturado automaticamente.</li>
+                  </ol>
+                </div>
+              </details>
+
+              <hr className="border-gray-200" />
+
+              {/* Pergunta 3 */}
+              <details className="group">
+                <summary className="flex items-center justify-between text-gray-900 text-lg font-semibold cursor-pointer list-none">
+                  Por que o Split-assist só tem um tipo de anamnese?
+                  <span className="text-2xl group-open:hidden">+</span>
+                  <span className="text-2xl hidden group-open:block">×</span>
+                </summary>
+                <div className="mt-4 text-gray-700 space-y-4">
+                  <p>O Splitcare foi desenvolvido para otimizar a vida do médico, mas, mais do que isso, para registrar e respaldar sua atuação. A plataforma tem um compromisso com segurança jurídica, auditoria e conformidade, garantindo que a documentação médica seja sempre precisa, completa e protegida.</p>
+                  <p>Por isso, o Splitcare utiliza uma anamnese padrão e completa, estruturada para ser segura, repetível e juridicamente respaldável. O objetivo não é apenas facilitar o registro, mas também garantir que as informações sejam consistentes, auditáveis e protegidas contra interpretações ambíguas.</p>
+                </div>
+              </details>
+
+              <hr className="border-gray-200" />
+
+              {/* Pergunta 4 */}
+              <details className="group">
+                <summary className="flex items-center justify-between text-gray-900 text-lg font-semibold cursor-pointer list-none">
+                  Por que o Split-assist não sugere CIDs, Diagnósticos ou Condutas?
+                  <span className="text-2xl group-open:hidden">+</span>
+                  <span className="text-2xl hidden group-open:block">×</span>
+                </summary>
+                <div className="mt-4 text-gray-700 space-y-4">
+                  <p>O Splitcare é um software de suporte à documentação, Ele não realiza análises clínicas, diagnósticos, prescrições ou recomendações terapêuticas, pois seu objetivo é apenas organizar e transcrever informações médicas de forma estruturada.</p>
+                  <p>Além disso, em conformidade com a Lei Geral de Proteção de Dados (LGPD – Lei nº 13.709/2018), o Splitcare respeita o princípio da tutela da saúde (art. 11 da LGPD), garantindo que os dados sejam tratados exclusivamente para melhoria da assistência médica, através do suporte à documentação clínica, sem interferir na tomada de decisão do profissional.</p>
+                </div>
+              </details>
+
+              <hr className="border-gray-200" />
+
+              {/* Pergunta 5 */}
+              <details className="group">
+                <summary className="flex items-center justify-between text-gray-900 text-lg font-semibold cursor-pointer list-none">
+                  O Split-assist é seguro?
+                  <span className="text-2xl group-open:hidden">+</span>
+                  <span className="text-2xl hidden group-open:block">×</span>
+                </summary>
+                <div className="mt-4 text-gray-700 space-y-4">
+                  <p>Sim. O Splitcare adota padrões rigorosos de segurança e privacidade para garantir a proteção dos dados médicos.</p>
+                  <p><strong>Conformidade com a LGPD:</strong> Todos os dados são tratados de acordo com a Lei Geral de Proteção de Dados (LGPD – Lei nº 13.709/2018), respeitando o princípio da tutela da saúde (art. 11 da LGPD).</p>
+                  <p><strong>Anonimização e Proteção de Dados:</strong> Nenhuma informação identificável do paciente é armazenada ou retida nos sistemas da Splitcare, garantindo total sigilo e segurança.</p>
+                  <p><strong>Criptografia e Segurança Avançada:</strong> Utilizamos criptografia de ponta a ponta, firewalls robustos e controle rigoroso de acessos, protegendo as informações contra acessos não autorizados.</p>
+                </div>
+              </details>
+            </div>
+          </div>
+
+          {/* Call-to-Action */}
+          <div className="text-center">
+            <button className="inline-flex items-center gap-3 px-8 py-4 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition-colors shadow-lg">
+              Use Splitcare
+              <ArrowRight className="w-5 h-5" />
+            </button>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
