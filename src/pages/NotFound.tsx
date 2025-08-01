@@ -1,8 +1,12 @@
 import { Link } from 'react-router-dom';
 import { Home, ArrowLeft } from 'lucide-react';
 import { ROUTES } from '../config/routes';
+import { useScrollToTop } from '../hooks/useScrollToTop';
 
 const NotFound = () => {
+  // Força scroll para o topo quando a rota muda
+  useScrollToTop();
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-[var(--color-primary-50)] to-[var(--color-accent-50)] flex items-center justify-center px-4">
       <div className="max-w-md w-full text-center">

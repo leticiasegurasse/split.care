@@ -4,6 +4,9 @@
 
 
 :root {
+  /* Fonte principal */
+  --font-family-primary: "Manrope", "Manrope Placeholder", sans-serif;
+  
   /* Cores principais da identidade visual */
   --color-primary: #238cd2;
   --color-secondary: #FFAF3C;
@@ -89,6 +92,17 @@
   100% {
     transform: translateX(-50%);
   }
+}
+
+/* Aplicação global da fonte */
+* {
+  font-family: var(--font-family-primary);
+}
+
+body {
+  font-family: var(--font-family-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 

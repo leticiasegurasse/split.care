@@ -1,4 +1,6 @@
 import { Mail, Linkedin, Instagram, MessageCircle } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { ROUTES } from '../config/routes';
 
 const Footer = () => {
   return (
@@ -20,33 +22,33 @@ const Footer = () => {
            {/* Seção Central - Links da Empresa */}
            <div className="space-y-4">
              <h3 className="text-white/70 text-sm font-medium uppercase tracking-wider">
-               Company
+               Navegação
              </h3>
              <ul className="space-y-2">
                <li>
-                 <a href="/" className="text-white hover:text-white/80 transition-colors">
+                 <Link to={ROUTES.home} className="text-white hover:text-white/80 transition-colors">
                    Home
-                 </a>
+                 </Link>
                </li>
                <li>
-                 <a href="/sobre" className="text-white hover:text-white/80 transition-colors">
-                   Sobre nós
-                 </a>
+                 <Link to={ROUTES.seguranca} className="text-white hover:text-white/80 transition-colors">
+                   Segurança
+                 </Link>
                </li>
                <li>
-                 <a href="/contato" className="text-white hover:text-white/80 transition-colors">
-                   Contato
-                 </a>
-               </li>
-               <li>
-                 <a href="/produtos" className="text-white hover:text-white/80 transition-colors">
+                 <Link to={ROUTES.produtos} className="text-white hover:text-white/80 transition-colors">
                    Produtos
-                 </a>
+                 </Link>
                </li>
                <li>
-                 <a href="/blog" className="text-white hover:text-white/80 transition-colors">
-                   Blog
-                 </a>
+                 <Link to={ROUTES.sobre} className="text-white hover:text-white/80 transition-colors">
+                   Sobre nós
+                 </Link>
+               </li>
+               <li>
+                 <Link to={ROUTES.contato} className="text-white hover:text-white/80 transition-colors">
+                   Contato
+                 </Link>
                </li>
              </ul>
            </div>
@@ -89,16 +91,16 @@ const Footer = () => {
 
           {/* Ícones de Redes Sociais */}
           <div className="flex space-x-4">
-            <a href="mailto:contato@splitcare.com" className="text-white hover:text-white/80 transition-colors">
+            <a href="mailto:contato@splitcare.com.br" className="text-white hover:text-white/80 transition-colors" title="Email: contato@splitcare.com.br">
               <Mail className="w-5 h-5" />
             </a>
-            <a href="https://linkedin.com/company/splitcare" target="_blank" rel="noopener noreferrer" className="text-white hover:text-white/80 transition-colors">
+            <a href="https://www.linkedin.com/company/splitcare/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-white/80 transition-colors" title="LinkedIn">
               <Linkedin className="w-5 h-5" />
             </a>
-            <a href="https://instagram.com/splitcare" target="_blank" rel="noopener noreferrer" className="text-white hover:text-white/80 transition-colors">
+            <a href="https://www.instagram.com/split.care/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-white/80 transition-colors" title="Instagram">
               <Instagram className="w-5 h-5" />
             </a>
-            <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" className="text-white hover:text-white/80 transition-colors">
+            <a href="https://wa.me/5511948440923" target="_blank" rel="noopener noreferrer" className="text-white hover:text-white/80 transition-colors" title="WhatsApp: +55 (11) 948 440 923">
               <MessageCircle className="w-5 h-5" />
             </a>
           </div>
