@@ -7,6 +7,7 @@ import Seguranca from '../pages/Seguranca';
 import Produtos from '../pages/Produtos';
 import Sobre from '../pages/Sobre';
 import Contato from '../pages/Contato';
+import PoliticaPrivacidade from '../pages/PoliticaPrivacidade';
 import NotFound from '../pages/NotFound';
 
 const AppRoutes = () => (
@@ -18,6 +19,7 @@ const AppRoutes = () => (
       <Route path={ROUTES.sobre} element={<DefaultLayout><Sobre /></DefaultLayout>} />
       <Route path={ROUTES.contato} element={<DefaultLayout><Contato /></DefaultLayout>} />
       <Route path={ROUTES.seguranca} element={<DefaultLayout><Seguranca /></DefaultLayout>} />
+      <Route path={ROUTES.politicaPrivacidade} element={<DefaultLayout><PoliticaPrivacidade /></DefaultLayout>} />
       
       {/* Rota 404 - Sem layout para ter design próprio */}
       <Route path="*" element={<NotFound />} />

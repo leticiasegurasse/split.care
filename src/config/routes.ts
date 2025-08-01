@@ -4,4 +4,5 @@ export const ROUTES = {
     produtos: '/produtos',
     sobre: '/sobre',
     contato: '/contato',
+    politicaPrivacidade: '/politica-privacidade',
 }; 
