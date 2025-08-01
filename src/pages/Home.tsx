@@ -17,7 +17,7 @@ import logoMeta from '../assets/images/logos/meta.avif';
 import logoOpenai from '../assets/images/logos/openai.avif';
 import logoHc from '../assets/images/logos/hc.avif';
 import lampadaCerebroImg from '../assets/images/lampada-cerebro.avif';
-import { Rocket, Shield, Users, ArrowRight } from 'lucide-react';
+import { Rocket, Shield, Users } from 'lucide-react';
 import FAQ from '../components/FAQ';
 
 const Home = () => {
