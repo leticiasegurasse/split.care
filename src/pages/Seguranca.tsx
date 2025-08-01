@@ -29,7 +29,7 @@ const Seguranca = () => {
 
             {/* Lado Direito - Ícone do Cadeado */}
             {/* Cadeado com sombra */}
-            <div className="absolute top-0 right-52 w-48 h-48 ">
+            <div className="hidden lg:block absolute top-0 right-52 w-48 h-48 ">
               <img 
                 src={cadeadoImage} 
                 alt="Cadeado de Segurança" 
