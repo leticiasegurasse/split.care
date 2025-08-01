@@ -5,4 +5,5 @@ export const ROUTES = {
     sobre: '/sobre',
     contato: '/contato',
     politicaPrivacidade: '/politica-privacidade',
+    termosUso: '/termos-uso',
 }; 
