@@ -83,7 +83,7 @@ const Sidebar = () => {
                   {item.name}
                   {active && (
                     <div className={`absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-1 h-1 rounded-full transition-all duration-300 ${
-                      isScrolled ? 'bg-black' : 'bg-[var(--color-primary)]'
+                      isScrolled ? 'bg-white' : 'bg-[var(--color-primary)]'
                     }`}></div>
                   )}
                 </Link>
