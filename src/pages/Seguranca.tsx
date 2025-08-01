@@ -9,8 +9,37 @@ import { Calendar, Home } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { ROUTES } from '../config/routes';
 import FAQ from '../components/FAQ';
+import { useState } from 'react';
 
 const Seguranca = () => {
+  const [email, setEmail] = useState('');
+
+  const handleFaleConosco = () => {
+    if (!email) {
+      alert('Por favor, digite seu email antes de continuar.');
+      return;
+    }
+
+    // Validar formato do email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      alert('Por favor, digite um email válido.');
+      return;
+    }
+
+    // Criar o link de email com assunto e corpo predefinidos
+    const subject = encodeURIComponent('Interesse no Splitcare - Página Segurança');
+    const body = encodeURIComponent(`Olá! Tenho interesse em conhecer mais sobre o Splitcare.
+
+Meu email: ${email}
+
+Aguardo o contato!`);
+    
+    const mailtoLink = `mailto:contato@splitcare.com.br?subject=${subject}&body=${body}`;
+    
+    // Abrir o cliente de email padrão
+    window.open(mailtoLink, '_blank');
+  };
   return (
     <div className="min-h-screen bg-white">
       {/* Primeira Seção - Hero */}
@@ -326,9 +355,13 @@ const Seguranca = () => {
                  </ul>
                  
                                    {/* Botão */}
-                  <button className="w-full bg-[var(--color-primary)] text-white py-3 px-6 rounded-lg font-medium hover:bg-[var(--color-primary-600)] transition-colors duration-200">
+                  <Link 
+                    to={ROUTES.register}
+                    target="_blank"
+                    className="w-full bg-[var(--color-primary)] text-white py-3 px-6 rounded-lg font-medium hover:bg-[var(--color-primary-600)] transition-colors duration-200 inline-block text-center"
+                  >
                     Use Splitcare
-                  </button>
+                  </Link>
                 </div>
 
                 {/* Plano 2 - Split-assist (Destaque) */}
@@ -372,9 +405,14 @@ const Seguranca = () => {
                                        <input 
                       type="email" 
                       placeholder="Digite aqui seu email" 
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                       className="w-full bg-[var(--color-secondary-100)] text-gray-800 py-3 px-4 rounded-lg placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-[var(--color-secondary-300)]"
                     />
-                    <button className="w-full bg-[var(--color-secondary)] text-white py-3 px-6 rounded-lg font-medium hover:bg-[var(--color-secondary-600)] transition-colors duration-200">
+                    <button 
+                      onClick={handleFaleConosco}
+                      className="w-full bg-[var(--color-secondary)] text-white py-3 px-6 rounded-lg font-medium hover:bg-[var(--color-secondary-600)] transition-colors duration-200"
+                    >
                       Fale Conosco
                     </button>
                  </div>
@@ -418,9 +456,13 @@ const Seguranca = () => {
                  </ul>
                  
                                    {/* Botão */}
-                  <button className="w-full bg-[var(--color-primary)] text-white py-3 px-6 rounded-lg font-medium hover:bg-[var(--color-primary-600)] transition-colors duration-200">
+                  <Link 
+                    to={ROUTES.register}
+                    target="_blank"
+                    className="w-full bg-[var(--color-primary)] text-white py-3 px-6 rounded-lg font-medium hover:bg-[var(--color-primary-600)] transition-colors duration-200 inline-block text-center"
+                  >
                     Use Splitcare
-                  </button>
+                  </Link>
                </div>
              </div>
            </div>

@@ -19,8 +19,42 @@ import logoHc from '../assets/images/logos/hc.avif';
 import lampadaCerebroImg from '../assets/images/lampada-cerebro.avif';
 import { Rocket, Shield, Users } from 'lucide-react';
 import FAQ from '../components/FAQ';
+import { Link } from 'react-router-dom';
+import { ROUTES } from '../config/routes';
+import { useState } from 'react';
 
 const Home = () => {
+  const [email1, setEmail1] = useState('');
+  const [email2, setEmail2] = useState('');
+  const [email3, setEmail3] = useState('');
+  const [email4, setEmail4] = useState('');
+
+  const handleFaleConosco = (emailValue: string, formNumber: number) => {
+    if (!emailValue) {
+      alert('Por favor, digite seu email antes de continuar.');
+      return;
+    }
+
+    // Validar formato do email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(emailValue)) {
+      alert('Por favor, digite um email válido.');
+      return;
+    }
+
+    // Criar o link de email com assunto e corpo predefinidos
+    const subject = encodeURIComponent('Interesse no Splitcare - Novo Contato');
+    const body = encodeURIComponent(`Olá! Tenho interesse em conhecer mais sobre o Splitcare.
+
+Meu email: ${emailValue}
+
+Aguardo o contato!`);
+    
+    const mailtoLink = `mailto:contato@splitcare.com.br?subject=${subject}&body=${body}`;
+    
+    // Abrir o cliente de email padrão
+    window.open(mailtoLink, '_blank');
+  };
   return (
     <div>
       {/* Primeira Seção - Hero */}
@@ -60,9 +94,14 @@ const Home = () => {
                   <input
                     type="email"
                     placeholder="Digite aqui seu email..."
+                    value={email1}
+                    onChange={(e) => setEmail1(e.target.value)}
                     className="flex-1 px-4 py-3 rounded-lg bg-[var(--color-secondary)] text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-white/20"
                   />
-                  <button className="px-6 py-3 bg-[var(--color-secondary)] text-white font-semibold rounded-lg hover:bg-[var(--color-secondary-600)] transition-colors duration-200 whitespace-nowrap">
+                  <button 
+                    onClick={() => handleFaleConosco(email1, 1)}
+                    className="px-6 py-3 bg-[var(--color-secondary)] text-white font-semibold rounded-lg hover:bg-[var(--color-secondary-600)] transition-colors duration-200 whitespace-nowrap"
+                  >
                     Fale Conosco
                   </button>
                 </div>
@@ -350,9 +389,14 @@ const Home = () => {
             <input
               type="email"
               placeholder="Digite aqui seu email..."
+              value={email2}
+              onChange={(e) => setEmail2(e.target.value)}
               className="flex-1 px-4 py-3 rounded-lg bg-[var(--color-secondary-100)] text-gray-900 placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-[var(--color-secondary)] focus:ring-opacity-50"
             />
-            <button className="px-6 py-3 bg-[var(--color-secondary)] text-white font-semibold rounded-lg hover:bg-[var(--color-secondary-600)] transition-colors duration-200 whitespace-nowrap">
+            <button 
+              onClick={() => handleFaleConosco(email2, 2)}
+              className="px-6 py-3 bg-[var(--color-secondary)] text-white font-semibold rounded-lg hover:bg-[var(--color-secondary-600)] transition-colors duration-200 whitespace-nowrap"
+            >
               Fale Conosco
             </button>
           </div>
@@ -447,9 +491,14 @@ const Home = () => {
             <input
               type="email"
               placeholder="Digite aqui seu email..."
+              value={email2}
+              onChange={(e) => setEmail2(e.target.value)}
               className="flex-1 px-4 py-3 rounded-lg bg-[var(--color-secondary-100)] text-gray-900 placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-[var(--color-secondary)] focus:ring-opacity-50"
             />
-            <button className="px-6 py-3 bg-[var(--color-secondary)] text-white font-semibold rounded-lg hover:bg-[var(--color-secondary-600)] transition-colors duration-200 whitespace-nowrap">
+            <button 
+              onClick={() => handleFaleConosco(email2, 2)}
+              className="px-6 py-3 bg-[var(--color-secondary)] text-white font-semibold rounded-lg hover:bg-[var(--color-secondary-600)] transition-colors duration-200 whitespace-nowrap"
+            >
               Fale Conosco
             </button>
           </div>
@@ -631,9 +680,14 @@ const Home = () => {
               <input
                 type="email"
                 placeholder="nome@email.com"
+                value={email4}
+                onChange={(e) => setEmail4(e.target.value)}
                 className="flex-1 px-6 py-4 bg-orange-100 border border-orange-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-300 focus:border-transparent"
               />
-              <button className="px-8 py-4 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition-colors duration-300 whitespace-nowrap">
+              <button 
+                onClick={() => handleFaleConosco(email4, 4)}
+                className="px-8 py-4 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition-colors duration-300 whitespace-nowrap"
+              >
                 Teste Grátis
               </button>
             </div>
@@ -725,9 +779,14 @@ const Home = () => {
                   <input
                     type="email"
                     placeholder="Digite aqui seu email..."
+                    value={email3}
+                    onChange={(e) => setEmail3(e.target.value)}
                     className="flex-1 px-4 py-3 bg-amber-100 border border-amber-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-300"
                   />
-                  <button className="px-6 py-3 bg-amber-500 text-white font-semibold rounded-lg hover:bg-amber-600 transition-colors whitespace-nowrap">
+                  <button 
+                    onClick={() => handleFaleConosco(email3, 3)}
+                    className="px-6 py-3 bg-amber-500 text-white font-semibold rounded-lg hover:bg-amber-600 transition-colors whitespace-nowrap"
+                  >
                     Fale Conosco
                   </button>
                 </div>
@@ -770,9 +829,13 @@ const Home = () => {
                   <span className="text-4xl font-bold text-gray-900">R$249,90</span>
                   <span className="text-gray-500 ml-2">/mês</span>
                 </div>
-                <button className="w-full px-6 py-4 bg-[var(--color-primary)] text-white font-semibold rounded-lg hover:bg-[var(--color-primary-600)] transition-colors">
+                <Link 
+                  to={ROUTES.register}
+                  target="_blank"
+                  className="w-full px-6 py-4 bg-[var(--color-primary)] text-white font-semibold rounded-lg hover:bg-[var(--color-primary-600)] transition-colors inline-block text-center"
+                >
                   Use Splitcare
-                </button>
+                </Link>
               </div>
             </div>
           </div>
