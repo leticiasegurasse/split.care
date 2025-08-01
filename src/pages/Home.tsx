@@ -29,7 +29,7 @@ const Home = () => {
   const [email3, setEmail3] = useState('');
   const [email4, setEmail4] = useState('');
 
-  const handleFaleConosco = (emailValue: string, formNumber: number) => {
+  const handleFaleConosco = (emailValue: string) => {
     if (!emailValue) {
       alert('Por favor, digite seu email antes de continuar.');
       return;
@@ -99,7 +99,7 @@ Aguardo o contato!`);
                     className="flex-1 px-4 py-3 rounded-lg bg-[var(--color-secondary)] text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-white/20"
                   />
                   <button 
-                    onClick={() => handleFaleConosco(email1, 1)}
+                    onClick={() => handleFaleConosco(email1)}
                     className="px-6 py-3 bg-[var(--color-secondary)] text-white font-semibold rounded-lg hover:bg-[var(--color-secondary-600)] transition-colors duration-200 whitespace-nowrap"
                   >
                     Fale Conosco
@@ -394,7 +394,7 @@ Aguardo o contato!`);
               className="flex-1 px-4 py-3 rounded-lg bg-[var(--color-secondary-100)] text-gray-900 placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-[var(--color-secondary)] focus:ring-opacity-50"
             />
             <button 
-              onClick={() => handleFaleConosco(email2, 2)}
+              onClick={() => handleFaleConosco(email2)}
               className="px-6 py-3 bg-[var(--color-secondary)] text-white font-semibold rounded-lg hover:bg-[var(--color-secondary-600)] transition-colors duration-200 whitespace-nowrap"
             >
               Fale Conosco
@@ -496,7 +496,7 @@ Aguardo o contato!`);
               className="flex-1 px-4 py-3 rounded-lg bg-[var(--color-secondary-100)] text-gray-900 placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-[var(--color-secondary)] focus:ring-opacity-50"
             />
             <button 
-              onClick={() => handleFaleConosco(email2, 2)}
+              onClick={() => handleFaleConosco(email2)}
               className="px-6 py-3 bg-[var(--color-secondary)] text-white font-semibold rounded-lg hover:bg-[var(--color-secondary-600)] transition-colors duration-200 whitespace-nowrap"
             >
               Fale Conosco
@@ -685,7 +685,7 @@ Aguardo o contato!`);
                 className="flex-1 px-6 py-4 bg-orange-100 border border-orange-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-300 focus:border-transparent"
               />
               <button 
-                onClick={() => handleFaleConosco(email4, 4)}
+                onClick={() => handleFaleConosco(email4)}
                 className="px-8 py-4 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition-colors duration-300 whitespace-nowrap"
               >
                 Teste Grátis
@@ -784,7 +784,7 @@ Aguardo o contato!`);
                     className="flex-1 px-4 py-3 bg-amber-100 border border-amber-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-300"
                   />
                   <button 
-                    onClick={() => handleFaleConosco(email3, 3)}
+                    onClick={() => handleFaleConosco(email3)}
                     className="px-6 py-3 bg-amber-500 text-white font-semibold rounded-lg hover:bg-amber-600 transition-colors whitespace-nowrap"
                   >
                     Fale Conosco
