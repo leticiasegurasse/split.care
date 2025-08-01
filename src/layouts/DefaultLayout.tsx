@@ -13,7 +13,7 @@ const DefaultLayout = ({ children }: Props) => {
   useScrollToTop();
 
   return (
-    <div className="min-h-screen overflow-x-hidden">
+    <div className="min-h-screen overflow-x-hidden bg-gray-50">
       <Sidebar />
       <main className="w-full mt-16 md:mt-20 mx-auto p-6 lg:p-0">
         {children}

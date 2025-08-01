@@ -81,12 +81,25 @@ const Footer = () => {
         {/* Linha Separadora */}
         <hr className="border-white/20 mb-8" />
 
-        {/* Seção Inferior - Copyright e Redes Sociais */}
+        {/* Seção Inferior - Copyright, Desenvolvimento e Redes Sociais */}
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           
           {/* Copyright */}
           <div className="text-white text-sm">
             Splitcare LTDA - 57.316.959/0001-58
+          </div>
+
+          {/* Desenvolvido por SGR */}
+          <div className="text-white text-sm">
+            Desenvolvido por{' '}
+            <a 
+              href="https://sgr.dev.br" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-[var(--color-primary-300)] hover:text-[var(--color-primary-400)] transition-colors font-bold"
+            >
+              SGR.DEV
+            </a>
           </div>
 
           {/* Ícones de Redes Sociais */}

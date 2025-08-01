@@ -1,8 +1,7 @@
 import relogioProdutos from '../assets/images/relogio-produtos.webp';
-import { ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import { ROUTES } from '../config/routes';
 import FAQ from '../components/FAQ';
+import CallToActionButton from '../components/CallToActionButton';
 
 const Produtos = () => {
   return (
@@ -127,18 +126,12 @@ const Produtos = () => {
               <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-8">
                 Use Splitcare
               </h2>
-              <Link 
-                to={ROUTES.register} 
-                target="_blank"
-                className="inline-flex items-center gap-3 bg-[var(--color-secondary)] hover:bg-[var(--color-secondary-600)] text-white pr-2 pl-7 py-2 rounded-lg text-lg font-semibold transition-colors duration-200 group"
-              >
-                <span>Liberte seu tempo agora!</span>
-                <div className="bg-[var(--color-secondary-600)] p-2 rounded-md group-hover:bg-[var(--color-secondary-700)] transition-colors duration-200">
-                  <ArrowRight className="w-7 h-7" />
-                </div>
-              </Link>
+              <CallToActionButton 
+                to={ROUTES.register}
+                text="Liberte seu tempo agora!"
+              />
             </div>
-                     </section>
+          </section>
 
            {/* Sexta Seção - FAQ */}
            <FAQ />
