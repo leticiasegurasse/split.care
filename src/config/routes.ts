@@ -7,4 +7,6 @@ export const ROUTES = {
     politicaPrivacidade: '/politica-privacidade',
     termosUso: '/termos-uso',
     licenciamento: '/licenciamento',
+    register: 'https://www.splitcare.com.br/register',
+    login: 'https://www.splitcare.com.br/login',
 }; 

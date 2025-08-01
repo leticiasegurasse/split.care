@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import { ROUTES } from '../config/routes';
 
 const Sidebar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -93,11 +94,11 @@ const Sidebar = () => {
 
           {/* Botão de Login */}
           <div className="flex items-center">
-            <button className={`transition-all duration-300 bg-[var(--color-primary)] text-white hover:bg-[var(--color-primary-600)] ${
+            <Link to={ROUTES.login} className={`transition-all duration-300 bg-[var(--color-primary)] text-white hover:bg-[var(--color-primary-600)] ${
               isScrolled ? 'px-4 py-2 rounded-lg text-sm' : 'px-6 py-2 rounded-lg'
             }`}>
               Login
-            </button>
+            </Link>
           </div>
         </div>
       </header>

@@ -1,4 +1,6 @@
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { ROUTES } from '../config/routes';
 
 const FAQ = () => {
   return (
@@ -106,10 +108,14 @@ const FAQ = () => {
 
         {/* Call-to-Action */}
         <div className="text-center">
-          <button className="inline-flex items-center gap-3 px-8 py-4 bg-[var(--color-secondary)] text-white font-semibold rounded-lg hover:bg-[var(--color-secondary-600)] transition-colors shadow-lg">
+          <Link 
+            to={ROUTES.register} 
+            target="_blank"
+            className="inline-flex items-center gap-3 px-8 py-4 bg-[var(--color-secondary)] text-white font-semibold rounded-lg hover:bg-[var(--color-secondary-600)] transition-colors shadow-lg"
+          >
             Use Splitcare
             <ArrowRight className="w-5 h-5" />
-          </button>
+          </Link>
         </div>
       </div>
     </section>
