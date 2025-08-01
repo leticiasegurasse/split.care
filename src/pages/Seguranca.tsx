@@ -6,6 +6,8 @@ import autenticacaoImage from '../assets/images/Autenticacao_multifator.svg';
 import documentacaoImage from '../assets/images/Documentacao_clara.svg';
 import convencidoImage from '../assets/images/ainda_nao_esta_convencido.svg';
 import { Calendar, Home } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { ROUTES } from '../config/routes';
 import FAQ from '../components/FAQ';
 
 const Seguranca = () => {
@@ -65,11 +67,11 @@ const Seguranca = () => {
                  Protegemos seus dados com os mais altos padrões de segurança.
                </p>
                
-               {/* Botão */}
-               <button className="flex items-center gap-2 bg-gray-100 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors duration-200">
-                 <Home className="w-4 h-4" />
-                 <span>View more</span>
-               </button>
+                               {/* Botão */}
+                <Link to={ROUTES.politicaPrivacidade} className="inline-flex items-center gap-2 bg-gray-100 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors duration-200">
+                  <Home className="w-4 h-4" />
+                  <span>View more</span>
+                </Link>
              </div>
 
              {/* Card 2 - Licenciamento */}
@@ -90,11 +92,11 @@ const Seguranca = () => {
                  Nossos acordos de licenciamento oferecem clareza para o uso do produto.
                </p>
                
-               {/* Botão */}
-               <button className="flex items-center gap-2 bg-gray-100 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors duration-200">
-                 <Home className="w-4 h-4" />
-                 <span>View more</span>
-               </button>
+                               {/* Botão */}
+                <Link to={ROUTES.licenciamento} className="inline-flex items-center gap-2 bg-gray-100 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors duration-200">
+                  <Home className="w-4 h-4" />
+                  <span>View more</span>
+                </Link>
              </div>
 
              {/* Card 3 - Termos de Uso */}
@@ -115,11 +117,11 @@ const Seguranca = () => {
                  Revisite nossos termos de uso para entender claramente seus direitos e obrigações.
                </p>
                
-               {/* Botão */}
-               <button className="flex items-center gap-2 bg-gray-100 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors duration-200">
-                 <Home className="w-4 h-4" />
-                 <span>View more</span>
-               </button>
+                               {/* Botão */}
+                <Link to={ROUTES.termosUso} className="inline-flex items-center gap-2 bg-gray-100 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors duration-200">
+                  <Home className="w-4 h-4" />
+                  <span>View more</span>
+                </Link>
              </div>
            </div>
                    </div>

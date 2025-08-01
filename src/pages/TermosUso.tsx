@@ -27,7 +27,7 @@ const TermosUso = () => {
           </div>
 
           {/* Conteúdo */}
-          <div className="prose prose-lg max-w-none">
+          <div className="prose prose-lg max-w-none text-justify">
             <p className="text-gray-700 leading-relaxed mb-8">
               Antes de utilizar nossa plataforma, leia atentamente estes Termos de Uso. Ao acessar e utilizar o software, declara ter lido, compreendido e aceitado integralmente as condições aqui estabelecidas, bem como os termos descritos em nossa Política de Privacidade.
             </p>

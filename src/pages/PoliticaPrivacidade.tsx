@@ -27,12 +27,12 @@ const PoliticaPrivacidade = () => {
           </div>
 
           {/* Conteúdo */}
-          <div className="prose prose-lg max-w-none">
-            <p className="text-gray-700 leading-relaxed mb-8">
+          <div className="prose prose-lg max-w-none text-justify">
+            <p className="text-gray-700 leading-relaxed mb-8 text-justify">
               A <strong>SPLITCARE LTDA</strong>, inscrita no CNPJ nº 57.316.959/0001-58, com sede na Rua Luiza Villaca, 277, Bairro Canadá, Cascavel-PR (doravante denominada "Splitcare" ou "Nós"), preza pela segurança e privacidade de seus dados. Por meio desta Política de Privacidade, o Splitcare se compromete com a segurança, privacidade e proteção dos dados pessoais de seus usuários. Esta Política de Privacidade tem como objetivo fornecer informações claras e detalhadas sobre como coletamos, utilizamos, armazenamos e protegemos seus dados pessoais, em conformidade com a Lei Geral de Proteção de Dados (LGPD – Lei nº 13.709/2018) e demais normativas aplicáveis.
             </p>
 
-            <p className="text-gray-700 leading-relaxed mb-8">
+            <p className="text-gray-700 leading-relaxed mb-8 text-justify">
               O tratamento dos dados pessoais sensíveis, quando aplicável, segue os princípios da LGPD, sendo realizado exclusivamente para aprimorar a assistência médica (por meio do suporte ao registro administrativo) e garantir a qualidade dos serviços prestados.
             </p>
 
@@ -44,15 +44,15 @@ const PoliticaPrivacidade = () => {
 
             {/* Seção 1 */}
             <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">1. Quais Dados Pessoais Coletamos e Por Que Coletamos?</h2>
-            <p className="text-gray-700 leading-relaxed mb-6">
+            <p className="text-gray-700 leading-relaxed mb-6 text-justify">
               Para personalizar sua experiência, garantir a segurança e o funcionamento adequado do software, a Splitcare poderá coletar e tratar as seguintes categorias de dados pessoais:
             </p>
 
             <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">Dados de Identificação:</h3>
-            <p className="text-gray-700 leading-relaxed mb-4">
+            <p className="text-gray-700 leading-relaxed mb-4 text-justify">
               <strong>Informações coletadas:</strong> Nome completo, telefone e e-mail.
             </p>
-            <p className="text-gray-700 leading-relaxed mb-6">
+            <p className="text-gray-700 leading-relaxed mb-6 text-justify">
               <strong>Finalidade:</strong> Cadastro na plataforma, envio de comunicações operacionais, materiais informativos e promocionais, quando autorizados.
             </p>
 

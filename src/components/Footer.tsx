@@ -60,19 +60,19 @@ const Footer = () => {
              </h3>
              <ul className="space-y-2">
                <li>
-                 <a href="/privacidade" className="text-white hover:text-white/80 transition-colors">
+                 <Link to={ROUTES.politicaPrivacidade} className="text-white hover:text-white/80 transition-colors">
                    Política de Privacidade
-                 </a>
+                 </Link>
                </li>
                <li>
-                 <a href="/licenciamento" className="text-white hover:text-white/80 transition-colors">
+                 <Link to={ROUTES.licenciamento} className="text-white hover:text-white/80 transition-colors">
                    Licenciamento
-                 </a>
+                 </Link>
                </li>
                <li>
-                 <a href="/termos" className="text-white hover:text-white/80 transition-colors">
+                 <Link to={ROUTES.termosUso} className="text-white hover:text-white/80 transition-colors">
                    Termos de Uso
-                 </a>
+                 </Link>
                </li>
              </ul>
            </div>

@@ -9,6 +9,7 @@ import Sobre from '../pages/Sobre';
 import Contato from '../pages/Contato';
 import PoliticaPrivacidade from '../pages/PoliticaPrivacidade';
 import TermosUso from '../pages/TermosUso';
+import Licenciamento from '../pages/Licenciamento';
 import NotFound from '../pages/NotFound';
 
 const AppRoutes = () => (
@@ -22,6 +23,7 @@ const AppRoutes = () => (
       <Route path={ROUTES.seguranca} element={<DefaultLayout><Seguranca /></DefaultLayout>} />
       <Route path={ROUTES.politicaPrivacidade} element={<DefaultLayout><PoliticaPrivacidade /></DefaultLayout>} />
       <Route path={ROUTES.termosUso} element={<DefaultLayout><TermosUso /></DefaultLayout>} />
+      <Route path={ROUTES.licenciamento} element={<DefaultLayout><Licenciamento /></DefaultLayout>} />
       
       {/* Rota 404 - Sem layout para ter design próprio */}
       <Route path="*" element={<NotFound />} />
